@@ -1,0 +1,12 @@
+nav a{
+     font-size: 1.5rem;
+     padding: .3rem;
+     text-decoration: none;
+}
+
+nav a:hover{
+     color: orange;
+}
+.active{
+     color: rgb(31, 177, 28);
+}
