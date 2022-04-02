@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
 const useTShirts = () => {
-  const [TShirts, setTShirts] = useState([]);
+  const [tShirts, setTShirts] = useState([]);
 
   useEffect(() => {
     fetch("tshirts.json")
       .then((response) => response.json())
       .then((data) => setTShirts(data));
   }, []);
-  return [TShirts, setTShirts];
+  return [tShirts, setTShirts];
 };
 
 export default useTShirts;
