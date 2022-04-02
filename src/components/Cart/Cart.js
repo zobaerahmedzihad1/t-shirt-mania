@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cart.css";
 
-const Cart = ({ cart, handleRemoveFromCart }) => {
+const Cart = ({ cart, handleRemoveFromCart, handleRefreshCart }) => {
   // console.log(cart);
 
   return (
@@ -11,9 +11,10 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
         <p>
           {" "}
           {tShirt.name}
-          <button onClick={()=> handleRemoveFromCart(tShirt)}>remove</button>
+          <button onClick={() => handleRemoveFromCart(tShirt)}>remove</button>
         </p>
       ))}
+      <button onClick={handleRefreshCart}>Refresh</button>
     </div>
   );
 };
